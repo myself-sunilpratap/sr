@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR Constructions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav class="navbar">
+  <img src="./images/SR logo (2).png" alt="logo" width="80px">
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="burger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<section class="home" id="home">
+    
+    <video autoplay loop muted playsinline
+    style="position: relative; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="./images/logo video (2).mp4" type="video/mp4">
+  </video>
+
+
+</section>
+
+
+<section id="about" class="about-section">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>At <strong>Sunrise Constructions</strong>, we believe a home is more than bricks and walls — <strong>It’s a place where dreams grow and families thrive</strong>. Our aim is to build <strong>strong, comfortable, and affordable homes</strong> that every family can be proud of.
+</p>
+
+      <p>From our small beginnings to the successful completion of residential projects, we have built our name on <strong>trust, quality, and honesty</strong>. Every project we finish is a reflection of our promise to deliver the <strong>best value for your money</strong>.
+</p>
+
+      <p>Whether we’re building apartments, villas, or small commercial spaces, our focus remains the same — <strong>To give you safe, modern, and long-lasting homes</strong> that fit your lifestyle and budget.
+</p>
+
+      <p>Our passionate team of <strong>engineers, designers, and planners</strong> work with care and attention to detail, making sure every home we build is something special.</p>
+
+      <p>At Sunrise Constructions, <i><strong>We don’t just build houses — we build relationships and create happy futures</strong></i>.</p>    
+      <div class="btn">
+    <a href="#contact" class="btn-con">Get in Touch</a>
+  </div>
+    </div>
+    
+  </div>
+  <div class="about-bp">
+      <h2>Builders and Promoters :</h2>
+      <div class="about-grid">
+    
+    <div class="about-card" >
+      <img src="./images/Somej.jpg" alt="Somej image">
+      <h3>N. SOMEJ&nbsp;<span style="font-size: 15px; font-weight: 500; padding-top: 3px;">M.Tech</span></h3>
+    </div>
+
+    <div class="about-card">
+      <img src="./images/Rajendra.jpg" alt="Rajendra image">
+      <h3>Y.RAJENDRA&nbsp;<span style="font-size: 15px; font-weight: 500; padding-top: 3px;">B.Tech</span></h3>
+    </div>
+
+    <div class="about-card" >
+      <img src="./images/Manohar.jpg" alt="Manohar image">
+      <h3>Ch. MANOHAR&nbsp;<span style="font-size: 15px; font-weight: 500; padding-top: 3px;">B.Tech</span></h3>
+    </div>
+
+    
+
+    </div>
+    </div>
+</section>
+
+
+<section id="projects" class="projects">
+  <h2>Our Projects</h2>
+  <div class="project-grid">
+    
+    <div class="project-card" onclick="openModal('project1')">
+      <img src="./images/project1.jpg" alt="Project 1">
+      <h3>Taneesha Towers</h3>
+      <p> Our first 2BHK apartment in Peaceful surroundings.</p>
+      <p ><strong>Status:</strong> Completed</p>
+    </div>
+
+    <div id="project1-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('project1')">&times;</span>
+    <h2>Taneesha Towers</h2>
+    <div class="modal-gallery">
+        <img src="./images/p img 1.jpg" alt="Image 1">
+        <img src="./images/p img 2.jpg" alt="Image 2">
+        <img src="./images/p img 3.jpg" alt="Image 3">
+        <img src="./images/p img 4.jpg" alt="Image 4">
+        <img src="./images/p img 5.png" alt="Image 5">
+    </div>
+
+    <p><strong>Location:</strong> Pratap Nagar, Kakinada</p>
+    <p><strong>Units:</strong> 10 (2BHK)</p>
+    <p><strong>Amenities:</strong> Near to Schools, Colleges , Hospitals , Parks & Markets.</p>
+    <p><strong>Description:</strong> Taneesha Towers is a beautifully planned residential apartment project by Sun Rise Constructions, known for its peaceful surroundings and high-quality construction. Perfect for families seeking serenity with city accessibility.</p>
+    
+
+
+  </div>
+</div>
+
+
+    <div class="project-card" onclick="openModal('project2')">
+      <img src="./images/project2.jpg" alt="Project 2">
+      <h3>Elite Homes</h3>
+      <p>Our flagship apartment with 10 premium flats.</p>
+      <p ><strong>Status:</strong> Completed</p>
+    </div>
+
+    <div id="project2-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('project2')">&times;</span>
+    <h2>Elite Homes</h2>
+    <div class="modal-gallery">
+        <img src="./images/p2 img 1.jpg" alt="Image 1">
+        <img src="./images/p2 img 2.jpg" alt="Image 2">
+        <img src="./images/p2 img 3.jpg" alt="Image 3">
+        <img src="./images/p2 img 4.jpg" alt="Image 4">
+    </div>
+
+    <p><strong>Location:</strong> Gandhi Nagar, Kakinada</p>
+    <p><strong>Units:</strong> 10 (2BHK)</p>
+    <p><strong>Amenities:</strong> Near to Schools, Colleges , Hospitals , Parks & Markets.</p>
+    <p><strong>Description:</strong> Elite Residency is a beautifully planned residential apartment project by Sun Rise Constructions, known for its peaceful surroundings and high-quality construction. Perfect for families seeking serenity with city accessibility.</p>
+  </div>
+</div>
+
+    <div class="project-card" onclick="openModal('project3')">
+      <img src="./images/project3.jpg" alt="Project 3">
+      <h3>Sunrise Nivanshi Enclave</h3>
+      <p>Our Group House Project with 6 Deluxe flats.</p>
+      <p><strong>Status:</strong> <span style="color: green; font-weight: 500;">Ongoing</span></p>
+    </div>
+
+    <div id="project3-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('project3')">&times;</span>
+    <h2>Sunrise Nivanshi Enclave</h2>
+    <div class="modal-gallery">
+        <img src="./images/project3.jpg" alt="Image 1">
+    </div>
+    
+    <section id="specifications" class="specifications">
+  <h2>Project Specifications</h2>
+  
+  <div class="spec-category">
+    <h3>Civil Works</h3>
+    <ul>
+      <li><strong>Structure:</strong> Earthquake resistant RCC frame structure by certified engineers</li>
+      <li><strong>Basement Filling:</strong> Pure Sand from Moolapeta.</li>
+      <li><strong>Basement Height:</strong> 2 feet from East Side CC road level</li>
+      <li><strong>Basement Pest Control:</strong> BIFFLEX (Chloropheriphos)</li>
+      <li><strong>Construction Sand:</strong> Pure Godavari river sand from Ubalanka</li>
+      <li><strong>Cement:</strong> OPC & PPC [Penna/Dalmia/Ultra tech/KCP/Sagar]</li>
+      <li><strong>Steel Reinforcement:</strong> MANGAL TMT 500 [8mm,12mm,16mm,20mm,25mm]</li>
+    </ul>
+  </div>
+
+  <div class="spec-category">
+    <h3>Walls</h3>
+    <ul>
+      <li><strong>Brickwork:</strong> Red bricks from Machavaram [best quality]</li>
+      <li><strong>Walls Thickness:</strong> 6” thickness outer walls & 4” thickness inner walls</li>
+      <li><strong>Internal Plastering:</strong> Double coat smooth finish plaster with cement mortar 1:6</li>
+      <li><strong>External Plastering:</strong> Rough textured plaster with sponge finish</li>
+      <li><strong>Elevation & Compound wall:</strong> Light weight bricks</li>
+    </ul>
+  </div>
+
+  <div class="spec-category">
+    <h3>Doors & Windows</h3>
+    <ul>
+      <li><strong>Main door:</strong> Engineered wood / Teak wood frame & Polished Teak door</li>
+      <li><strong>Internal doors:</strong> Granite frames & laminated doors hard wood</li>
+      <li><strong>Bathroom doors:</strong> Granite frames & PVC/WPC doors for moisture resistance.</li>
+      <li><strong>Windows:</strong> UPVC 2.5 channel mosquito mesh windows with iron grills</li>
+    </ul>
+  </div>
+
+
+  <div class="spec-category">
+    <h3>Flooring</h3>
+    <ul>
+      <li><strong>Living, Kitchen & Bedrooms:</strong> 4 Feet x 2 Feet Vetrified Tiles</li>
+      <li><strong>Bathrooms, Balcony, Utility:</strong> Anti-skid ceramic tiles 12”x12” with proper slope</li>
+      <li><strong>Common Corridor, Steps:</strong> Anti-skid ceramic tiles</li>
+      <li><strong>Skirting:</strong> Matching tile skirting 4 inches height in all rooms</li>
+    </ul>
+  </div>
+
+  <div class="spec-category">
+    <h3>Painting & Wallcare</h3>
+    <ul>
+      <li><strong>Internal wall finishes:</strong>Putty finish, Primer coat & 2 colour coats of emulsion paints</li>
+      <li><strong>External wall finishes:</strong> 2 colour coats of exterior paints</li>
+      <li><strong>Paintings:</strong> Asian paints</li>
+      <li><strong>False ceiling work:</strong> Gypsum boards 10mm thick Higreeve/SIRI [best quality]</li>
+    </ul>
+  </div>
+
+  <div class="spec-category">
+    <h3>Kitchen</h3>
+    <ul>
+      <li><strong>Countertop:</strong> 24” Granite platform</li>
+      <li><strong>DADO:</strong> 4 Feet height tiles 18”x12” above kitchen platform</li>
+      <li><strong>Sink:</strong> 21” x 18” heavy duty SS sink</li>
+      <li><strong>Provision:</strong> Water purifier provision, Two electrical points above platform for mixer/grinder/microwave</li>
+      <li><strong>Exhaust:</strong> Dedicated 6” exhaust duct with separate electric point</li>
+      <li><strong>Water:</strong> Separate taps for Municipal water & Borewell water</li>
+    </ul>
+  </div>
+
+  <div class="spec-category">
+    <h3>Bathrooms</h3>
+    <ul>
+      <li><strong>Walls:</strong> Glazed ceramic tile Dado upto 6 Feet height tiles 18”x12”</li>
+      <li><strong>Fixtures:</strong> Indian/ Western commode, Hot & Cold shower mixture</li>
+      <li><strong>Provision:</strong> Washbasin provision, Geyser & exhaust fan provision with separate electric points</li>
+      <li><strong>Plumbing & Sanitary:</strong> CPVC concealed water pipeline, UPVC openable PVC pipeline</li>
+    </ul>
+  </div>
+
+  <div class="spec-category">
+    <h3>Electrical Works</h3>
+    <ul>
+      <li><strong>Wiring:</strong> Concealed copper wiring[Goldmedal/GM/Vishal]</li>
+      <li><strong>Boards & Switches:</strong> Modular [Goldmedal/GM/Vishal]</li>
+      <li><strong>Fixtures:</strong> Provision for ceiling fans and light points in all rooms</li>
+      <li><strong>Panel Board:</strong> Heavy duty with 125A TPN switch for on/off</li>
+      <li><strong>Earth Pits:</strong> ¾ nos with copper 10no SWG copper wire</li>
+      <li><strong>Inverter:</strong> Wiring will be done</li>
+      <li><strong>AC points:</strong> 2 AC points will be provided in each bed room.</li>
+      <li><strong>Power for each flat:</strong> 4 KW</li>
+      <li><strong>TV & Internet points:</strong> Provided in Living room</li>
+    </ul>
+  </div>
+
+  <div class="spec-category">
+    <h3>MISC</h3>
+    <ul>
+      <li><strong>Wash basin:</strong> Only one basin in dining area[Bathsense/cera/varmora]</li>
+      <li><strong>Washing Machine:</strong> Provision will be provided in utility area</li>
+      <li><strong>Water Motors:</strong> 1 Hp & 0.5Hp mono block [Kumar/CRI pumps]</li>
+      <li><strong>Main gate:</strong> Good quality Aluminum pipes</li>
+      <li><strong>Railing:</strong> Half brick work and half MS Railing</li>
+      <li><strong>PARKING AREA:</strong> Ample Car parking will be provided with markings</li>
+      <li><strong>UTILITY AREA:</strong> Ceramic tile dado up-to cill height</li>
+      <li><strong>ELEVATOR:</strong> 5-Passenger ARAI/ISI certified lift [Atis/ Escon/Mars/Nibav]</li>
+      <li><strong>GENERATOR:</strong> Backup for water pumps, lift, parking lights, and staircases</li>
+    </ul>
+  </div>
+
+</section>
+  </div>
+</div>
+
+    <div class="project-card">
+      <img src="" alt="Project 4">
+      <h3>Name</h3>
+      <p></p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>We're here to help. Reach out to us for <span style="font-weight: 600;">Project Inquiries, Construction Works & Site Developments</span>.</p>
+
+  <div class="contact-container">
+    <!-- Contact Form -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("I2bB_L8c9bj3OPHRU"); 
+  })();
+</script>
+
+<form class="contact-form" id="contactForm">
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Your Name" required>
+  </div>
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Your Email" required>
+  </div>
+  <div class="form-group">
+    <textarea name="message" placeholder="Your Message"></textarea>
+  </div>
+  <button type="submit" class="submit-btn">Send Message</button>
+  <p id="success-message" class="success-message">Thank you! We'll get back to you soon.</p>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  emailjs.sendForm("service_236hztx", "template_mbvh84p", this)
+    .then(() => {
+      alert("Message sent successfully!");
+    }, (err) => {
+      alert("Failed to send: " + JSON.stringify(err));
+    });
+});
+</script>
+
+    <!-- Contact Info & Map -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>Phone:</strong> <a href="tel:+91 8500 844 860">+91 8500 844 860</a></p>
+      <p><strong>Email:</strong> <a href="mailto:sunriseinfo2025@gmail.com">sunriseinfo2025@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/918500844860" target="_blank">Chat on WhatsApp</a></p>
+
+      
+    </div>
+  </div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
