@@ -284,55 +284,69 @@
 
 <section id="contact" class="contact-section">
   <h2>Contact Us</h2>
-  <p>We're here to help. Reach out to us for <span style="font-weight: 600;">Project Inquiries, Construction Works & Site Developments</span>.</p>
+  <p>We're here to help. Reach out to us for 
+    <span style="font-weight: 600;">Project Inquiries, Construction Works & Site Developments</span>.
+  </p>
 
   <div class="contact-container">
+    <!-- Updated EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init({ publicKey: "I2bB_L8c9bj3OPHRU" }); 
+      })();
+    </script>
+
     <!-- Contact Form -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("I2bB_L8c9bj3OPHRU"); 
-  })();
-</script>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <p id="success-message" class="success-message" style="display:none; color:green;">
+        Thank you! We'll get back to you soon.
+      </p>
+    </form>
 
-<form class="contact-form" id="contactForm">
-  <div class="form-group">
-    <input type="text" name="name" placeholder="Your Name" required>
-  </div>
-  <div class="form-group">
-    <input type="email" name="email" placeholder="Your Email" required>
-  </div>
-  <div class="form-group">
-    <textarea name="message" placeholder="Your Message"></textarea>
-  </div>
-  <button type="submit" class="submit-btn">Send Message</button>
-  <p id="success-message" class="success-message">Thank you! We'll get back to you soon.</p>
-</form>
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const form = this;
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+        // 📨 1. Send message to admin
+        emailjs.sendForm("service_gd4q1ls", "template_2wzohfs", form)
+          .then(() => {
+            console.log("✅ Admin notified");
 
-  emailjs.sendForm("service_236hztx", "template_mbvh84p", this)
-    .then(() => {
-      alert("Message sent successfully!");
-    }, (err) => {
-      alert("Failed to send: " + JSON.stringify(err));
-    });
-});
-</script>
+            // 📬 2. Send auto-reply to the user
+            return emailjs.sendForm("service_gd4q1ls", "template_mbvh84p", form);
+          })
+          .then(() => {
+            // 🎉 3. Show success message & clear form
+            document.getElementById("success-message").style.display = "block";
+            form.reset();
 
-    <!-- Contact Info & Map -->
-    <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p><strong>Phone:</strong> <a href="tel:+91 8500 844 860">+91 8500 844 860</a></p>
-      <p><strong>Email:</strong> <a href="mailto:sunriseinfo2025@gmail.com">sunriseinfo2025@gmail.com</a></p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/918500844860" target="_blank">Chat on WhatsApp</a></p>
-
-      
-    </div>
+            // Hide success message after 5 seconds (optional)
+            setTimeout(() => {
+              document.getElementById("success-message").style.display = "none";
+            }, 5000);
+          })
+          .catch((err) => {
+            console.error("❌ EmailJS error:", err);
+            alert("Failed to send: " + JSON.stringify(err));
+          });
+      });
+    </script>
   </div>
 </section>
+
+
 
 
 
