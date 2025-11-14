@@ -40,7 +40,7 @@
       <p>From our small beginnings to the successful completion of residential projects, we have built our name on <strong>trust, quality, and honesty</strong>. Every project we finish is a reflection of our promise to deliver the <strong>best value for your money</strong>.
 </p>
 
-      <p>Whether we’re building apartments, villas, or commercial spaces, our focus remains the same — <strong>To give you safe, modern, and long-lasting homes</strong> that fit your lifestyle and budget.
+      <p>Whether we’re building apartments, villas, or small commercial spaces, our focus remains the same — <strong>To give you safe, modern, and long-lasting homes</strong> that fit your lifestyle and budget.
 </p>
 
       <p>Our passionate team of <strong>engineers, designers, and planners</strong> work with care and attention to detail, making sure every home we build is something special.</p>
@@ -272,11 +272,29 @@
 
 
 
-    <div class="project-card">
-      <img src="" alt="Project 4">
-      <h3>Name</h3>
-      <p></p>
+    <div class="project-card" onclick="openModal('project4')">
+      <img src="./images/project4.jpg" alt="Project 4">
+      <h3>Individual building</h3>
+      <p>Individual Duplex house with Plush Interiors</p>
+      <p ><strong>Status:</strong> Completed</p>
     </div>
+
+    <div id="project4-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('project4')">&times;</span>
+    <h2>Individual building</h2>
+    <div class="modal-gallery">
+        <img src="./images/project4.jpg" alt="Image 1">
+        <img src="./images/p4 img 1.jpg" alt="Image 2">
+        <img src="./images/p4 img 2.jpg" alt="Image 3">
+        <img src="./images/p4 img 3.jpg" alt="Image 4">
+        <img src="./images/p4 img 4.jpg" alt="Image 5">
+    </div>
+
+    <p><strong>Location:</strong> Gandhi Nagar, Kakinada</p>
+    <p><strong>Units:</strong> Duplex House</p>
+  </div>
+</div>
 
   </div>
 </section>
@@ -302,7 +320,7 @@
       <div class="form-group">
         <input type="text" name="name" placeholder="Your Name" required>
       </div>
-        <div class="form-group">
+      <div class="form-group">
         <input type="mobile" name="mobile" placeholder="Your Mobile Number" required>
       </div>
       <div class="form-group">
@@ -364,5 +382,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
